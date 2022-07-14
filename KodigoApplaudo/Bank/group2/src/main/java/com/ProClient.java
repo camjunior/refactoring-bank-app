@@ -4,7 +4,7 @@ public class ProClient extends Client {
 
     double TaxRate = 0.20;
 
-    public double getTaxRate() {
+    public double getProTaxRate() {
         return TaxRate;
     }
 

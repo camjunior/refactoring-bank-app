@@ -2,20 +2,54 @@ package com;
 
 public class Investment {
 
-    Client client;
+    Account account;
     double amtInv;
-    double interestRate = RegClient.getTaxRate();
-    double years;
+    static double interestRate;
+    static double years;
 
-    double presentValue(double amtInv) {
+    public double getAmtInv() {
+        return amtInv;
+    }
+
+    public void setAmtInv(double amtInv) {
+        this.amtInv = amtInv;
+    }
+
+    public double getInterestRate() {
+        return interestRate;
+    }
+
+    public void setInterestRate(double interestRate) {
+        this.interestRate = interestRate;
+    }
+
+    public double getYears() {
+        return years;
+    }
+
+    public void setYears(double years) {
+        this.years = years;
+    }
+
+    double returnInterestRate() {
+        if (Validation.typeOfClient() == ProClient) {
+            return 0.20;
+
+        } else {
+            return 0.15;
+        }
+
+    }
+
+    static double presentValue(double amtInv) {
         if (amtInv != 0) {
             amtInv++;
         }
         return amtInv;
     }
 
-    double futureValue() {
-        return presentValue(0) * Math.pow(1 + interestRate, years);
+    static double futureValue() {
+        return presentValue(0) * Math.pow(1 + 0.20, years);
     }
 
 }

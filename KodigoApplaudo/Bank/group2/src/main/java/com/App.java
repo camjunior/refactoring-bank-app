@@ -16,8 +16,9 @@ public class App {
 
         Client client = new Client(name, customerId);
         Account account = new Account();
+        Investment investment = new Investment();
 
-        Bank bank = new Bank(client, account);
+        Bank bank = new Bank(client, account, investment);
         bank.menu();
 
         input.close();

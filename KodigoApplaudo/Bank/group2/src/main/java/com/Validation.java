@@ -5,21 +5,24 @@ import java.util.function.IntFunction;
 public class Validation {
 
     Client client;
+    private String ProClient;
+    private String RegClient;
 
-    public boolean IdValidation() {
-        if (Client.getCustomerId) {
-            return false;
-        }
-        return true;
+    // public boolean idValidation() {
+    // if (Client.getCustomerId(equals(!=11))) {
+    // return false;
+    // }
+    // return true;
 
-    }
+    //
 
-    public String TypeOfClient() {
-        if (Client.getBal() >= "10000") {
+    public String typeOfClient() {
+        if (Account.getBal() >= 10.000) {
             return ProClient;
         } else {
-
+            return RegClient;
         }
 
     }
+
 }

@@ -2,10 +2,10 @@ package com;
 
 public class RegClient extends Client {
 
-    static double TaxRate = 0.15;
+    static double RegTaxRate = 0.15;
 
-    public static double getTaxRate() {
-        return TaxRate;
+    public static double getRegTaxRate() {
+        return RegTaxRate;
     }
 
     public RegClient(String name, String customerId) {

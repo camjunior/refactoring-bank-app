@@ -1,15 +1,11 @@
 package com;
 
 class Account {
-    double bal;
+    static double bal;
     double prevTrans;
 
-    public double getBal() {
+    public static double getBal() {
         return bal;
-    }
-
-    public void setBal(double bal) {
-        this.bal = bal;
     }
 
     public double getPrevTrans() {

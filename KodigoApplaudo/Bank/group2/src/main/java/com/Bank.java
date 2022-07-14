@@ -8,9 +8,10 @@ public class Bank {
     Account account;
     Investment investment;
 
-    public Bank(Client client, Account account) {
+    public Bank(Client client, Account account, Investment investment) {
         this.client = client;
         this.account = account;
+        this.investment = investment;
 
     }
 
@@ -74,6 +75,7 @@ public class Bank {
                         System.out.println("Enter how many years you want to invest this value:");
                         double yearInv = sc.nextDouble();
                         investment.setYears(yearInv);
+                        System.out.println("Your return in the period will be: " + Investment.futureValue());
                         System.out.println("......................");
                         System.out.println("\n");
                         break;

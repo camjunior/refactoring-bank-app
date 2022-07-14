@@ -1,4 +1,4 @@
-package com;
+package com.pdf;
 
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
@@ -9,8 +9,8 @@ import java.io.FileNotFoundException;
 
 public class PdfGenerator {
 
-    public static void main(String[] args) throws FileNotFoundException {
-        String path = "E:\\Kodigo\\Projecto\\Group2\\BankBalance";
+    public PdfGenerator () throws FileNotFoundException {
+        String path = "E:\\Kodigo\\Projecto\\Group2\\BankBalance.pdf";
         PdfWriter pdfWriter = new PdfWriter(path);
 
         PdfDocument pdfDocument = new PdfDocument(pdfWriter);

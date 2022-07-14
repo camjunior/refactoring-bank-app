@@ -1,7 +1,5 @@
 package com;
 
-import java.util.function.IntFunction;
-
 public class Validation {
 
     Client client;

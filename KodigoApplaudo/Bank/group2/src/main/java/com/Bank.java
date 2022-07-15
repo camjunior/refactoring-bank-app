@@ -75,7 +75,7 @@ public class Bank {
                         System.out.println("Enter how many years you want to invest this value:");
                         double yearInv = sc.nextDouble();
                         investment.setYears(yearInv);
-                        System.out.println("Your return in the period will be: " + Investment.futureValue());
+                        System.out.println("Your return in the period will be: " + Investment.futureValue(amtInv));
                         System.out.println("......................");
                         System.out.println("\n");
                         break;

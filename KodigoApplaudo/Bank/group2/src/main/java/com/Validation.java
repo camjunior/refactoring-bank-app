@@ -5,8 +5,6 @@ import java.util.function.IntFunction;
 public class Validation {
 
     Client client;
-    private String ProClient;
-    private String RegClient;
 
     // public boolean idValidation() {
     // if (Client.getCustomerId(equals(!=11))) {
@@ -16,11 +14,11 @@ public class Validation {
 
     //
 
-    public String typeOfClient() {
+    public static String typeOfClient() {
         if (Account.getBal() >= 10.000) {
-            return ProClient;
+            return "ProClient";
         } else {
-            return RegClient;
+            return "RegClient";
         }
 
     }

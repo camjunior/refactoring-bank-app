@@ -31,8 +31,8 @@ public class Investment {
         this.years = years;
     }
 
-    double returnInterestRate() {
-        if (Validation.typeOfClient() == ProClient) {
+    static double returnInterestRate() {
+        if (Validation.typeOfClient() == "ProClient") {
             return 0.20;
 
         } else {
@@ -48,8 +48,8 @@ public class Investment {
         return amtInv;
     }
 
-    static double futureValue() {
-        return presentValue(0) * Math.pow(1 + 0.20, years);
+    static double futureValue(double amtInv) {
+        return presentValue(amtInv) * Math.pow(1 + returnInterestRate(), years);
     }
 
 }

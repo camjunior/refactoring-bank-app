@@ -4,24 +4,14 @@ import java.util.Scanner;
 
 public class App {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+    UserData user = new UserData();
 
-        System.out.println("Ingrese su nombre");
-        String name = input.next();
-        System.out.println("Ingrese su ID");
+    Client client = new Client(user.getUserName(), user.getUserID());
+    Account account = new Account();
 
-        String customerId = input.next();
-
-        Client client = new Client(name, customerId);
-        Account account = new Account();
-
-        Bank bank = new Bank(client, account);
-        bank.menu();
-
-        input.close();
-
-    }
-
+    Bank bank = new Bank(client, account);
+    bank.menu();
+  }
 }

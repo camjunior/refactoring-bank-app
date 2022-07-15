@@ -1,28 +1,16 @@
 package com;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class Client implements Persona {
 
-    String name;
-    String customerId;
+  @Getter @Setter private String name;
 
-    public Client(String name, String customerId) {
-        this.name = name;
-        this.customerId = customerId;
-    }
+  @Getter @Setter private String customerId;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
-    }
+  public Client(String name, String customerId) {
+    this.name = name;
+    this.customerId = customerId;
+  }
 }

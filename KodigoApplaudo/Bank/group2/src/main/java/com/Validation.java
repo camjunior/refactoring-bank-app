@@ -1,25 +1,23 @@
 package com;
 
-import java.util.function.IntFunction;
-
 public class Validation {
 
     Client client;
 
-    public boolean IdValidation() {
+    /*public boolean IdValidation() {
         if (Client.getCustomerId) {
             return false;
         }
         return true;
 
-    }
+    }*/
 
-    public String TypeOfClient() {
+    /*public String TypeOfClient() {
         if (Client.getBal() >= "10000") {
             return ProClient;
         } else {
 
         }
 
-    }
+    }*/
 }

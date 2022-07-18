@@ -1,5 +1,6 @@
 package com;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Bank {
@@ -14,7 +15,7 @@ public class Bank {
 
     }
 
-    void menu() {
+    void menu() throws FileNotFoundException {
         char option;
 
         try (Scanner sc = new Scanner(System.in)) {
@@ -79,9 +80,13 @@ public class Bank {
                         System.out.println("\n");
                         break;
 
-                    /*case 'f':
+                    case 'f':
                         System.out.println("......................");
-                        System.out.println("PDF");*/
+                        System.out.println("PDF");
+                        PdfGenerator pdfGenerator = new PdfGenerator();
+                        System.out.println("......................");
+                        System.out.println("\n");
+                        break;
 
                     case 'g':
                         System.out.println("......................");
@@ -91,8 +96,9 @@ public class Bank {
                         break;
                 }
 
-            } while (option != 'f');
+            } while (option != 'g');
         }
+
         System.out.println("Thank you for using our banking services");
 
     }

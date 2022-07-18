@@ -5,17 +5,14 @@ import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
 import com.Account;
-import com.sun.java.swing.action.AlignCenterAction;
 
-
-import javax.swing.text.StyledDocument;
 import java.io.FileNotFoundException;
 
 public class PdfGenerator {
 
     public PdfGenerator () throws FileNotFoundException {
-        Account bal = new Account();
-        Account prevTrans = new Account();
+        //Account bal = new Account();
+        //Account prevTrans = new Account();
         String path = "E:\\Kodigo\\Projecto\\Group2\\BankBalance.pdf";
         PdfWriter pdfWriter = new PdfWriter(path);
 
@@ -28,11 +25,15 @@ public class PdfGenerator {
         Paragraph title = new Paragraph(bank);
         document.add(title);
 
-        String Balance = ("Account Balance: " + bal);
-        Paragraph Bal = new Paragraph(Balance);
+        String UserName = ("Pepito Perez");
+        Paragraph userName = new Paragraph(UserName);
+        document.add(userName);
+
+        String balance = ("Account Balance: " + 500);
+        Paragraph Bal = new Paragraph(balance);
         document.add(Bal);
 
-        String Trans = ("Account Transaction: " + prevTrans);
+        String Trans = ("Account Transaction: " + 250);
         Paragraph AccountTrans = new Paragraph(Trans);
         document.add(AccountTrans);
 

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Group2.iml" filepath="$PROJECT_DIR$/.idea/Group2.iml" />
       <module fileurl="file://$PROJECT_DIR$/KodigoApplaudo/Bank/group2/group2.iml" filepath="$PROJECT_DIR$/KodigoApplaudo/Bank/group2/group2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/refactoring-bank-app.iml" filepath="$PROJECT_DIR$/.idea/refactoring-bank-app.iml" />
     </modules>
   </component>
 </project>

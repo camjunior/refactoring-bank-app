@@ -1,5 +1,8 @@
 package com;
 
+import java.util.Collection;
+import java.util.Set;
+
 public class RegClient extends Client {
 
     static double RegTaxRate = 0.15;
@@ -8,7 +11,7 @@ public class RegClient extends Client {
         return RegTaxRate;
     }
 
-    public RegClient(String name, String customerId) {
+    public RegClient(Collection<String> name, Set<String> customerId) {
         super(name, customerId);
     }
 

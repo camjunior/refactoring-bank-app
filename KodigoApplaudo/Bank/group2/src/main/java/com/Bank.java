@@ -5,40 +5,39 @@ import java.util.Scanner;
 
 public class Bank {
 
-    Client client;
-    Account account;
-    Investment investment;
+  Client client;
+  Account account;
+  Investment investment;
 
-    public Bank(Client client, Account account, Investment investment) {
-        this.client = client;
-        this.account = account;
-        this.investment = investment;
+  public Bank(Client client, Account account) {
+    this.client = client;
+    this.account = account;
+  }
 
-    }
+  void menu() {
+    char option;
 
     void menu() throws FileNotFoundException {
         char option;
+    try (Scanner sc = new Scanner(System.in)) {
+      System.out.println("Welcome " + client.getName());
+      System.out.println("Your ID: " + client.getCustomerId());
+      System.out.println("\n");
+      System.out.println("a) Check Balance");
+      System.out.println("b) Deposit Amount");
+      System.out.println("c) Withdraw Amount");
+      System.out.println("d) Previous Transaction");
+      System.out.println("e) Investments");
+      System.out.println("f) Generate PDF");
+      System.out.println("g) Exit");
 
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Welcome " + client.getName());
-            System.out.println("Your ID:" + client.getCustomerId());
-            System.out.println("\n");
-            System.out.println("a) Check Balance");
-            System.out.println("b) Deposit Amount");
-            System.out.println("c) Withdraw Amount");
-            System.out.println("d) Previous Transaction");
-            System.out.println("e) Investments");
-            System.out.println("f) Generate PDF");
-            System.out.println("g) Exit");
+      do {
+        System.out.println("********************************************");
+        System.out.println("Choose an option");
+        option = sc.next().charAt(0);
+        System.out.println("\n");
 
-            do {
-                System.out.println("********************************************");
-                System.out.println("Choose an option");
-                option = sc.next().charAt(0);
-                System.out.println("\n");
-
-                switch (option) {
-
+        switch (option) {
                     case 'a':
                         System.out.println("......................");
                         System.out.println("Balance =" + account.getBal());
@@ -103,5 +102,9 @@ public class Bank {
 
         System.out.println("Thank you for using our banking services");
 
+      } while (option != 'f');
     }
+    System.out.println("Thank you for using our banking services");
+    System.exit(0);
+  }
 }

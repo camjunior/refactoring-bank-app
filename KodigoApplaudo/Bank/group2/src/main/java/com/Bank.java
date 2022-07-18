@@ -14,11 +14,9 @@ public class Bank {
     this.account = account;
   }
 
-  void menu() {
-    char option;
-
     void menu() throws FileNotFoundException {
         char option;
+
     try (Scanner sc = new Scanner(System.in)) {
       System.out.println("Welcome " + client.getName());
       System.out.println("Your ID: " + client.getCustomerId());
@@ -72,10 +70,10 @@ public class Bank {
                         System.out.println("......................");
                         System.out.println("Enter a amount to invest:");
                         double amtInv = sc.nextDouble();
-                        investment.presentValue(amtInv);
+                        //investment.presentValue(amtInv);
                         System.out.println("Enter how many years you want to invest this value:");
                         double yearInv = sc.nextDouble();
-                        System.out.println("Your return in the period will be: " + Investment.futureValue(amtInv));
+                        //System.out.println("Your return in the period will be: " + Investment.futureValue(amtInv));
                         //investment.setYears(yearInv);
                         System.out.println("......................");
                         System.out.println("\n");
@@ -99,12 +97,9 @@ public class Bank {
 
             } while (option != 'g');
         }
-
         System.out.println("Thank you for using our banking services");
-
-      } while (option != 'f');
+        System.exit(0);
     }
-    System.out.println("Thank you for using our banking services");
-    System.exit(0);
+
   }
-}
+

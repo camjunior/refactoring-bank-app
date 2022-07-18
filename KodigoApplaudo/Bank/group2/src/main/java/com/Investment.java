@@ -2,7 +2,7 @@ package com;
 
 public class Investment {
 
-  Client client;
+  /*Client client;
   double amtInv;
   double interestRate = RegClient.getTaxRate();
   double years;
@@ -16,5 +16,5 @@ public class Investment {
 
   double futureValue() {
     return presentValue(0) * Math.pow(1 + interestRate, years);
-  }
+  }*/
 }

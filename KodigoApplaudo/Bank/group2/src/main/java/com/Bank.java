@@ -26,7 +26,8 @@ public class Bank {
             System.out.println("c) Withdraw Amount");
             System.out.println("d) Previous Transaction");
             System.out.println("e) Investments");
-            System.out.println("f) Exit");
+            System.out.println("f) Generate PDF");
+            System.out.println("g) Exit");
 
             do {
                 System.out.println("********************************************");
@@ -73,12 +74,16 @@ public class Bank {
                         investment.presentValue(amtInv);
                         System.out.println("Enter how many years you want to invest this value:");
                         double yearInv = sc.nextDouble();
-                        investment.setYears(yearInv);
+                        //investment.setYears(yearInv);
                         System.out.println("......................");
                         System.out.println("\n");
                         break;
 
-                    case 'f':
+                    /*case 'f':
+                        System.out.println("......................");
+                        System.out.println("PDF");*/
+
+                    case 'g':
                         System.out.println("......................");
                         break;
                     default:

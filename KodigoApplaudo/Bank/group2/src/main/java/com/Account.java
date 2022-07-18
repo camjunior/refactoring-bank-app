@@ -1,6 +1,7 @@
 package com;
 
 class Account {
+
     double bal;
     double prevTrans;
 

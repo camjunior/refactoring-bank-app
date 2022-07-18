@@ -1,0 +1,6 @@
+
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¢ÍÉ8¨¿å 0
+^
+java:S1126"AReplace this if-then-else statement by a single return statement.(ÃìÒè8‘¨¿å 0
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿œ®Ê8‘¨¿å 0
+E	java:S108")Either remove or fill this block of code.(å¥‡8œ¨¿å 0

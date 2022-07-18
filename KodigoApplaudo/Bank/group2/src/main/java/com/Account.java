@@ -1,8 +1,8 @@
 package com;
 
 class Account {
-  double bal;
-  double prevTrans;
+  private double bal;
+  private double prevTrans;
 
   public double getBal() {
     return bal;

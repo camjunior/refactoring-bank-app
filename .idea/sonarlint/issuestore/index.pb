@@ -1,3 +1,19 @@
 
+[
++.idea/libraries/Maven__junit_junit_4_11.xml,e\c\ec13f10714a5eec675a96e36cd71bd064d063683
+i
+9.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml,b\8\b8d96649614bd84192f3496ef7d33bab1d1e5ec1
+w
+G.idea/sonarlint/issuestore/1/b/1b229be8ad64facf294e15d1905daffc4eb23866,4\7\4741ed2df3ff36aeb67705b668eda32b95a0aad3
+k
+;.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml,e\3\e3631492191c257e535ea753f84db0f0f91375fd
+l
+<KodigoApplaudo/Bank/group2/src/main/java/com/Investment.java,8\c\8cd706e3877f22c9264cc3b78b75f2bf0baf203a
+l
+<KodigoApplaudo/Bank/group2/src/main/java/com/Validation.java,0\3\03dd3140bfc618ea142cbba17f0453a28b86155d
+f
+6KodigoApplaudo/Bank/group2/src/main/java/com/Bank.java,3\7\3797689bfab6b49951c0d4d54b9237c62350025c
+u
+EKodigoApplaudo/Bank/group2/src/test/java/com/example/AccountTest.java,6\4\642423db41b84c5f45201589d4343166be2bac1d
 i
 9KodigoApplaudo/Bank/group2/src/main/java/com/Persona.java,1\b\1b229be8ad64facf294e15d1905daffc4eb23866

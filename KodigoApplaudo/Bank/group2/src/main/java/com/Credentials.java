@@ -1,7 +1,8 @@
 package com;
 
 public interface Credentials {
-
-    String getUserName();
-    String getUserID();
+    String getsendUserName();
+    void getUserName();
+    String getsendUserID();
+    void getUserID();
 }

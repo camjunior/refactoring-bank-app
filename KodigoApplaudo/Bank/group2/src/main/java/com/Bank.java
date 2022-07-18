@@ -1,5 +1,6 @@
 package com;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Bank {
@@ -15,7 +16,7 @@ public class Bank {
 
     }
 
-    void menu() {
+    void menu() throws FileNotFoundException {
         char option;
 
         try (Scanner sc = new Scanner(System.in)) {
@@ -27,7 +28,8 @@ public class Bank {
             System.out.println("c) Withdraw Amount");
             System.out.println("d) Previous Transaction");
             System.out.println("e) Investments");
-            System.out.println("f) Exit");
+            System.out.println("f) Generate PDF");
+            System.out.println("g) Exit");
 
             do {
                 System.out.println("********************************************");
@@ -74,13 +76,21 @@ public class Bank {
                         investment.presentValue(amtInv);
                         System.out.println("Enter how many years you want to invest this value:");
                         double yearInv = sc.nextDouble();
-                        investment.setYears(yearInv);
                         System.out.println("Your return in the period will be: " + Investment.futureValue(amtInv));
+                        //investment.setYears(yearInv);
                         System.out.println("......................");
                         System.out.println("\n");
                         break;
 
                     case 'f':
+                        System.out.println("......................");
+                        System.out.println("PDF");
+                        PdfGenerator pdfGenerator = new PdfGenerator();
+                        System.out.println("......................");
+                        System.out.println("\n");
+                        break;
+
+                    case 'g':
                         System.out.println("......................");
                         break;
                     default:
@@ -88,8 +98,9 @@ public class Bank {
                         break;
                 }
 
-            } while (option != 'f');
+            } while (option != 'g');
         }
+
         System.out.println("Thank you for using our banking services");
 
     }

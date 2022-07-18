@@ -1,7 +1,8 @@
 package com;
 
 class Account {
-    static double bal;
+
+    double bal;
     double prevTrans;
 
     public static double getBal() {

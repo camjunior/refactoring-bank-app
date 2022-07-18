@@ -18,7 +18,7 @@ public class Bank {
 
     try (Scanner sc = new Scanner(System.in)) {
       System.out.println("Welcome " + client.getName());
-      System.out.println("Your ID:" + client.getCustomerId());
+      System.out.println("Your ID: " + client.getCustomerId());
       System.out.println("\n");
       System.out.println("a) Check Balance");
       System.out.println("b) Deposit Amount");
@@ -71,7 +71,7 @@ public class Bank {
             investment.presentValue(amtInv);
             System.out.println("Enter how many years you want to invest this value:");
             double yearInv = sc.nextDouble();
-            //investment.setYears(yearInv);
+            // investment.setYears(yearInv);
             System.out.println("......................");
             System.out.println("\n");
             break;
@@ -79,6 +79,7 @@ public class Bank {
           case 'f':
             System.out.println("......................");
             break;
+
           default:
             System.out.println("Choose a correct option to proceed");
             break;
@@ -87,5 +88,6 @@ public class Bank {
       } while (option != 'f');
     }
     System.out.println("Thank you for using our banking services");
+    System.exit(0);
   }
 }

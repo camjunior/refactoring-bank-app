@@ -1,5 +1,8 @@
 package com;
 
+import java.util.Collection;
+import java.util.Set;
+
 public class ProClient extends Client {
 
     double TaxRate = 0.20;
@@ -8,7 +11,7 @@ public class ProClient extends Client {
         return TaxRate;
     }
 
-    public ProClient(String name, String customerId) {
+    public ProClient(Collection<String> name, Set<String> customerId) {
         super(name, customerId);
     }
 
